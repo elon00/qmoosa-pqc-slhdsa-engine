@@ -1,0 +1,34 @@
+{
+  "name": "@qmoosa/pqc-slhdsa-engine",
+  "version": "1.0.0",
+  "description": "QMOOSA Post-Quantum Cryptography — NIST FIPS 205 SLH-DSA Audited Stateless Hash-Based Signature Engine & Invariant Verification",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/engine.test.mjs",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@noble/post-quantum": "^0.7.1",
+    "@qmoosa/pqc-slhdsa-protocol": "file:../qmoosa-pqc-slhdsa-protocol"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "qmoosa",
+    "pqc",
+    "fips-205",
+    "slh-dsa",
+    "sphincs-plus",
+    "hash-based-signatures",
+    "signature-engine",
+    "noble",
+    "quantum-safe"
+  ],
+  "author": "elon00",
+  "license": "MIT"
+}
